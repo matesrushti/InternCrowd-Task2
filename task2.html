@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Login and Sign up form</title>
+        <link rel="stylesheet" href = "task2.css">
+    </head>
+    <body>
+        <div class = "hero">
+            <div class="navbar">
+                <div class="icon">
+                    <img src="download.png" class="logo" >
+                    <h6 class="logo">Edu4U</h6>
+                </div>
+                <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+                </div>
+            </div>    
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="Login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="SignUp()">Sign Up</button>
+                 </div>
+                 <div class = "social-icon">
+                    <img src = "fb.png">
+                    <img src = "tw.png">
+                    <img src = "gp.png">
+                </div>
+                <form id ="Login" class="input-gp">
+                    <input type="text" class="input-field" placeholder="Enter Username" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="Submit" class="submit-btn">Log In</button>
+                </form>
+                <form id = "SignUp" class="input-gp">
+                    <input type="text" class="input-field" placeholder="Enter Username" required>
+                    <input type="email" class="input-field" placeholder="Enter Email-ID" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="number" class="input-field" placeholder="Enter Mobile-No." required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms and condition</span>
+                    <button type="Submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            var x = document.getElementById("Login");
+            var y = document.getElementById("SignUp");
+            var z = document.getElementById("btn");
+            
+            function SignUp(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px"
+            }
+            function Login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+            }
+        </script>
+    </body>
+</html>
